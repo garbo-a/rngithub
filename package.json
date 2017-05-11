@@ -1,35 +1,36 @@
 {
-	"name": "rngithub",
-	"version": "0.0.1",
-	"private": true,
-	"scripts": {
-		"start": "node node_modules/react-native/local-cli/cli.js start",
-		"test": "jest"
-	},
-	"dependencies": {
-		"Draper": "^1.1.0",
-		"ramda": "^0.23.0",
-		"react": "16.0.0-alpha.6",
-		"react-native": "0.44.0",
-		"react-native-router-flux": "^3.38.1",
-		"react-redux": "^5.0.4",
-		"recompose": "^0.23.1",
-		"redux": "^3.6.0",
-		"redux-logger": "^3.0.1",
-		"redux-saga": "^0.15.3",
-		"reselect": "^3.0.1"
-	},
-	"devDependencies": {
-		"babel-core": "^6.17.0",
-		"babel-eslint": "^6.1.2",
-		"babel-jest": "20.0.0",
-		"babel-polyfill": "^6.16.0",
-		"babel-preset-es2015": "^6.16.0",
-		"babel-preset-react-native": "^1.9.0",
-		"jest": "20.0.0",
-		"react-test-renderer": "16.0.0-alpha.6"
-	},
-	"jest": {
-		"preset": "react-native"
-	}
+  "name": "rngithub",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest"
+  },
+  "dependencies": {
+    "Draper": "^1.1.0",
+    "immutable": "^3.8.1",
+    "ramda": "^0.23.0",
+    "react": "16.0.0-alpha.6",
+    "react-native": "0.43.3",
+    "react-native-router-flux": "3.38.0",
+    "react-redux": "^5.0.4",
+    "recompose": "^0.23.1",
+    "redux": "^3.6.0",
+    "redux-logger": "^3.0.1",
+    "redux-saga": "^0.15.3",
+    "reselect": "^3.0.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.17.0",
+    "babel-eslint": "^6.1.2",
+    "babel-jest": "20.0.0",
+    "babel-polyfill": "^6.16.0",
+    "babel-preset-es2015": "^6.16.0",
+    "babel-preset-react-native": "^1.9.0",
+    "jest": "20.0.0",
+    "react-test-renderer": "16.0.0-alpha.6"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
 }

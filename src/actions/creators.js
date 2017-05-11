@@ -1,14 +1,19 @@
 import {
   REQUEST,
+  ROUTING,
   SESSION,
 } from './types';
-import { sceneKeys } from '../routes-contants';
 
 const action = (type, payload, meta) => ({ type, payload, meta });
 
 export const session = {
-  onLoggedIn: () =>
-    action(SESSION.LOGGED_IN),
+  onLoggedIn: () => action(SESSION.LOGGED_IN),
+  onTopReposLoaded: repos => action(SESSION.TOP_REPOS_LOADED, repos),
+  onPullsOfReposLoaded: pulls => action(SESSION.PULLS_OF_REPO_LOADED, pulls),
+};
+
+export const routing = {
+  onDetailRepoPage: id => action(ROUTING.DETAIL_REPO_PAGE, id),
 };
 
 export const request = {

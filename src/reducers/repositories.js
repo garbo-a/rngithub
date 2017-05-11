@@ -1,12 +1,11 @@
-import { REQUEST, SESSION } from '../actions/types';
+import { SESSION } from '../actions/types';
 
-const initialState = {};
+const initialState = [];
 
 export default (state = initialState, { type, payload = {}, meta = {} }) => {
-  if (type === SESSION.LOGGED_IN) {
-    return {
-      ...state
-    }
+  if (type === SESSION.TOP_REPOS_LOADED) {
+    const repos = (payload && payload.items) || [];
+    return repos;
   }
   return state;
 };

@@ -13,4 +13,10 @@ export const REQUEST = createTypes('REQUEST', [
 
 export const SESSION = createTypes('SESSION', [
   'LOGGED_IN',
+  'TOP_REPOS_LOADED',
+  'PULLS_OF_REPO_LOADED',
+]);
+
+export const ROUTING = createTypes('SESSION', [
+  'DETAIL_REPO_PAGE',
 ]);

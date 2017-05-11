@@ -67,7 +67,7 @@ export function requestActionCreators(type) {
 }
 
 // Calls a promise. Puts events for start, success, error, and cancelled.
-export function* request(type, func, meta) {
+export function* requestSequence(type, func, meta) {
   // Get the request event types for this type.
   const {
     start,
