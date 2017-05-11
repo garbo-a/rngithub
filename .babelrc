@@ -1,4 +1,3 @@
 {
-  "presets": ["react-native"],
-  "plugins": ["babel-plugin-transform-exponentiation-operator"]
+  "presets": ["react-native"]
 }
