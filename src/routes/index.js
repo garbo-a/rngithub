@@ -19,7 +19,7 @@ export default class Routes extends Component {
           />
           <Scene key='DetailRepoPage'
                  component={DetailRepoPage}
-                 title='Detail'
+                 title='Pull Requests'
           />
         </Scene>
       </Router>

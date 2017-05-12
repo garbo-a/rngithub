@@ -6,3 +6,6 @@ import R from 'ramda';
 
 // repos
 export const getCurrentRepositories = R.path(['repositories']);
+
+// pulls
+export const getCurrentRepoPulls = R.path(['pulls']);

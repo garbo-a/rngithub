@@ -5,13 +5,12 @@ import {
   routing,
   session,
 } from '../actions/creators';
-import selector from '../selectors/DetailRepoPage';
-import DetailRepoPage from '../components/DetailRepoPage';
+import ListHeader from '../components/ListHeader';
 
 export default connect(
-  selector,
+  null,
   R.mergeAll([
     routing,
     session,
   ]),
-)(DetailRepoPage);
+)(ListHeader);

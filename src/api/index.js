@@ -20,7 +20,7 @@ export async function getRepos(url) {
 
 
 export const getPullsOfRepoCall = (owner, repo) =>{
-  return fetch(`${githubAPIUrlPulls}${owner}/${repo}/pulls?sort=created`, {
+  return fetch(`${githubAPIUrlPulls}${owner}/${repo}/pulls?sort=created&state=all&direction=desc`, {
     method: 'GET',
     headers: {
       'Accept': 'application/json',

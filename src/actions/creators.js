@@ -10,6 +10,7 @@ export const session = {
   onLoggedIn: () => action(SESSION.LOGGED_IN),
   onTopReposLoaded: repos => action(SESSION.TOP_REPOS_LOADED, repos),
   onPullsOfReposLoaded: pulls => action(SESSION.PULLS_OF_REPO_LOADED, pulls),
+  onSearchRepos: q => action(SESSION.SEARCH_REPOS, q),
 };
 
 export const routing = {

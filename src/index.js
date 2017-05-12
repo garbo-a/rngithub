@@ -9,7 +9,6 @@ import Routes from './routes'
 import rootSaga from './sagas';
 import store from './store/store';
 
-
 store.runSaga(rootSaga);
 
 /* eslint-disable react/prefer-stateless-function, react/prefer-es6-class */
@@ -27,7 +26,6 @@ class RNGithub extends PureComponent {
     });
   }
 
-
   render() {
     return (
       <Provider store={store}>
@@ -36,6 +34,4 @@ class RNGithub extends PureComponent {
   }
 }
 
-
 AppRegistry.registerComponent('rngithub', () => RNGithub);
-

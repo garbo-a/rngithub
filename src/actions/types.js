@@ -15,8 +15,9 @@ export const SESSION = createTypes('SESSION', [
   'LOGGED_IN',
   'TOP_REPOS_LOADED',
   'PULLS_OF_REPO_LOADED',
+  'SEARCH_REPOS',
 ]);
 
-export const ROUTING = createTypes('SESSION', [
+export const ROUTING = createTypes('ROUTING', [
   'DETAIL_REPO_PAGE',
 ]);
