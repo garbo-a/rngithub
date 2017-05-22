@@ -8,12 +8,16 @@ import { SESSION } from '../../actions/types'
 import { session } from '../../actions/creators'
 
 export function* onLoggedInFetchRepos() {
-  const topRepos = yield call(
-    getRepos,
-    githubAPIUrl,
-    { activity: SESSION.LOGGED_IN, path: 'repos' },
-  );
-  yield put(session.onTopReposLoaded(topRepos));
+  try {
+    const topRepos = yield call(
+      getRepos,
+      githubAPIUrl,
+      { activity: SESSION.LOGGED_IN, path: 'repos' },
+    );
+    yield put(session.onTopReposLoaded(topRepos));
+  } catch (e) {
+    console.log(e);
+  }
 }
 
 export function* onSearchRepos(action) {
